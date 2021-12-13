@@ -1,5 +1,3 @@
-# This is a workflow to deploy a leech bot to heroku using GitHub Actions
-
 name: Deploy To Heroku
 
 on: workflow_dispatch
@@ -20,3 +18,8 @@ jobs:
           region: "eu"
         env:
           HD_CONFIG_ENV_URL: ${{secrets.CONFIG_ENV_URL}}
+          HD_TG_BOT_TOKEN: ${{secrets.TG_BOT_TOKEN}}
+          HD_OWNER_ID: ${{secrets.OWNER_ID}}
+          HD_APP_ID: ${{secrets.APP_ID}}
+          HD_API_HASH: ${{secrets.API_HASH}}
+          HD_AUTH_CHANNEL: ${{secrets.AUTH_CHANNEL}}
