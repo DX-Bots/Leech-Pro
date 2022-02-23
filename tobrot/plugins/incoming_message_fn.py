@@ -93,7 +93,7 @@ async def incoming_message_f(client, message):
             os.makedirs(new_download_location)
         aria_i_p = ''
         if not is_file:
-            await i_m_sefg.edit_text("Extracting links...")
+            await i_m_sefg.edit_text("<b>Getting Available Formate</b>...")
             # start the aria2c daemon
             aria_i_p = await aria_start()
             # LOGGER.info(aria_i_p)
